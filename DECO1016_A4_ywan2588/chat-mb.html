@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title>chat</title>
+<link rel="stylesheet" type="text/css" href="css/chat.css" />
+</head>
+<body>
+<section class="aui-flexView">
+  <header class="aui-navBar"> <a href="javascript:;" style="margin-top:5px;">
+    <div class="aui-flex-list-image"> <img src="images/iconfinder_2_2694140.png" style="width:33px; margin:10px"> </div>
+    <div class="aui-flex-list-text" style="color:#FFF; position: absolute;top: 20px;left: 50px;">
+      <h4>Tom</h4>
+    </div>
+    </a>
+    <div class="aui-center"> <span class="aui-center-title"><img src="images/logo.png" width="38" style="margin-top: 18px;"></span> </div>
+    <a href="register2-mb.html" class="aui-navBar-item select"> <i class="icon icon-add"></i> </a> </header>
+  <section class="aui-scrollView">
+    <div class="aui-search">
+      <div class="aui-search-box">
+        <input type="text" placeholder="search">
+        <span class="aui-search-box-search"> <i class="icon icon-search"></i> </span> <span class="aui-search-box-voice"> <i class="icon icon-voice"></i> </span> </div>
+    </div>
+    <div class="aui-flex-list"> <a href="chat1-mb.html" class="aui-flex-list-item">
+      <div class="aui-flex-list-image"> <img src="images/iconfinder_1_2694139.png" alt=""> </div>
+      <div class="aui-flex-list-text">
+        <h4>David</h4>
+        <p>HEYHEYHEYHEY!!!</p>
+      </div>
+      <span class="aui-flex-list-right">11:10</span> </a> <a href="chat1-mb.html" class="aui-flex-list-item">
+      <div class="aui-flex-list-image"> <img src="images/iconfinder_4_2694134.png" alt=""> <span class="aui-badge"></span> </div>
+      <div class="aui-flex-list-text">
+        <h4>Tina</h4>
+        <p class="aui-red-text">I love you!</p>
+      </div>
+      <span class="aui-flex-list-right">11:28</span> </a> <a href="chat1-mb.html" class="aui-flex-list-item">
+      <div class="aui-flex-list-image"> <img src="images/iconfinder_5_2694138.png" alt=""> </div>
+      <div class="aui-flex-list-text">
+        <h4>Bill</h4>
+        <p>What's up man?</p>
+      </div>
+      <span class="aui-flex-list-right">11:30</span> </a> <a href="chat1-mb.html" class="aui-flex-list-item">
+      <div class="aui-flex-list-image"> <img src="images/iconfinder_8_2694142.png" alt=""> </div>
+      <div class="aui-flex-list-text">
+        <h4>Peter</h4>
+        <p>How to solve this question?</p>
+      </div>
+      <span class="aui-flex-list-right">Yesterday</span> </a> </div>
+  </section>
+  <footer class="aui-footer"> <a href="javascript:;" class="aui-tabBar-item aui-tabBar-item-active"> <span class="aui-tabBar-item-icon"> <i class="icon icon-home"></i> </span> </a> <a href="javascript:;" class="aui-tabBar-item "> <span class="aui-tabBar-item-icon"> <i class="icon icon-mail"></i> </span> </a> <a href="javascript:;" class="aui-tabBar-item "> <span class="aui-tabBar-item-icon"> <i class="icon icon-find"></i> </span> </a> <a href="javascript:;" class="aui-tabBar-item "> <span class="aui-tabBar-item-icon"> <i class="icon icon-me"></i> </span> </a> </footer>
+</section>
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript">
+
+            $(function() {
+
+                var oDropDown = $('.select');
+                var oChangeA = $('.listA');
+                oDropDown.click(function() {
+                    $(this).find('.selectList').toggle().siblings('.xl-icon').toggleClass('sq-icon');
+                });
+
+                oDropDown.mouseleave(function() {
+                    $(this).find('.selectList').hide().siblings('.xl-icon').removeClass('sq-icon');
+                });
+
+            });
+        </script>
+</body>
+</html>
